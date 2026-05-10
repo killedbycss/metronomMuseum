@@ -1,0 +1,27 @@
+/* Базовая информация */
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: 'NAMU';
+  font-size: 5vw;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: 'Literata';
+  font-weight: 600;
+  font-size: 5vw;
+}
+
+h2 {
+  font-family: 'Onest';
+  font-weight: 700;
+  font-size: 5vw;
+}

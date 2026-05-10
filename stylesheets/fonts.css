@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-Pro.woff2') format('woff2'),
+    url('../fonts/NAMU-Pro.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-1960.woff2') format('woff2'),
+    url('../fonts/NAMU-1960.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-1930.woff2') format('woff2'),
+    url('../fonts/NAMU-1930.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-1910.woff2') format('woff2'),
+    url('../fonts/NAMU-1910.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-1850.woff2') format('woff2'),
+    url('../fonts/NAMU-1850.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-1750.woff2') format('woff2'),
+    url('../fonts/NAMU-1750.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-1600.woff2') format('woff2'),
+    url('../fonts/NAMU-1600.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NAMU';
+  src:
+    url('../fonts/NAMU-1400.woff2') format('woff2'),
+    url('../fonts/NAMU-1400.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src:
+    url('../fonts/Onest-Bold.woff2') format('woff2'),
+    url('../fonts/Onest-Bold.woff') format('woff');
+  font-weight: 700;
+}
