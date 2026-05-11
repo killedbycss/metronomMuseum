@@ -1,37 +1,55 @@
-sendEmailEn()
-projects()
+burgerMenu()
+navigation()
 
-function projects() {
-  let foresightOpen = document.querySelector('#foresight')
-  let balancewayOpen = document.querySelector('#balanceway')
-  let bimbookOpen = document.querySelector('#bimbook')
-  let dosugOpen = document.querySelector('#dosug')
+function burgerMenu() {
+  let logo = document.querySelector('.logo')
+  let logoArrow = document.querySelector('#logoArrow')
+  let arrow = document.querySelector('#logoArrow img')
+  let nav = document.querySelector('nav')
+  let underline = document.querySelectorAll('nav p')
 
-  foresightOpen.addEventListener('click', () => {
-    window.location.href = 'projectsRu/foresight.html'
+  logo.addEventListener('mouseenter', () => {
+    logo.classList.toggle('active')
+    logoArrow.classList.toggle('active')
+    arrow.classList.toggle('active')
   })
 
-  balancewayOpen.addEventListener('click', () => {
-    window.location.href = 'projectsRu/balanceway.html'
+  logo.addEventListener('mouseleave', () => {
+    logo.classList.toggle('active')
+    logoArrow.classList.toggle('active')
+    arrow.classList.toggle('active')
   })
 
-  bimbookOpen.addEventListener('click', () => {
-    window.location.href = 'projectsRu/bimbook.html'
+  logo.addEventListener('click', () => {
+    nav.classList.toggle('active')
   })
 
-  dosugOpen.addEventListener('click', () => {
-    window.location.href = 'projectsRu/dosug.html'
+  underline.forEach((p) => {
+    p.addEventListener('mouseenter', () => {
+      p.classList.toggle('active')
+    })
+    p.addEventListener('mouseleave', () => {
+      p.classList.toggle('active')
+    })
   })
 }
 
-function sendEmailEn() {
-  let emEnButton = document.querySelector('#emEn')
+function navigation() {
+  let collection = document.querySelector('#collection')
+  let about = document.querySelector('#about')
+  let store = document.querySelector('#store')
+  let museum = document.querySelector('#museum')
 
-  emEnButton.addEventListener('click', () => {
-    const email = 'taras.balabaev@gmail.com'
-    const subject = encodeURIComponent('Went to you from site')
-    const body = encodeURIComponent('Hello! I would to contact with you')
-
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
+  collection.addEventListener('click', () => {
+    window.location.href = 'collection.html'
+  })
+  about.addEventListener('click', () => {
+    window.location.href = 'about.html'
+  })
+  store.addEventListener('click', () => {
+    window.location.href = 'store.html'
+  })
+  museum.addEventListener('click', () => {
+    window.location.href = 'index.html'
   })
 }

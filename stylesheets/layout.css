@@ -8,20 +8,100 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  position: fixed;
+  width: 100%;
+  padding: 5vw 2vw;
+  top: -100vh;
+  transition: 1.5s ease-in-out;
+  height: 100vh;
+  background-color: white;
+}
+
+nav p {
+  width: fit-content;
+  height: 1.5vw;
+  position: relative;
+  cursor: pointer;
+}
+
+nav p::after {
+  display: block;
+  margin-top: 0.2vw;
+  width: 0%;
+  height: 0.2vw;
+  content: '';
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+nav p.active::after {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+nav.active {
+  top: 0;
+  transition: 1.5s ease-in-out;
+}
+
+header {
+  width: 100%;
+  padding: 2vw;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 2vw;
+  gap: 0vw;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.logo.active {
+  gap: 0.3vw;
+  transition: 0.5s ease-in;
+}
+
+.logo img {
+  width: 4vw;
+  height: auto;
+}
+
+#logoArrow {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  gap: 0.5vw;
+  transition: 0.5s ease-in;
+}
+
+#logoArrow.active {
+  transition: 0.5s ease-in;
+}
+
+#logoArrow p,
+nav p {
+  font-size: 2.3vw;
   font-family: 'NAMU';
-  font-size: 5vw;
   font-weight: 500;
 }
 
-h1 {
-  font-family: 'Literata';
-  font-weight: 600;
-  font-size: 5vw;
+#logoArrow p {
+  height: 187%;
 }
 
-h2 {
-  font-family: 'Onest';
-  font-weight: 700;
-  font-size: 5vw;
+#logoArrow img {
+  width: 0.5vw;
+  transition: 0.5s ease-in;
+}
+
+#logoArrow img.active {
+  rotate: 90deg;
+  transition: 0.5s ease-in;
 }
