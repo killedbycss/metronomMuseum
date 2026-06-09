@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+/* body {
+  background-color: blue;
+} */
+
 nav {
   display: flex;
   flex-direction: column;
@@ -15,10 +19,17 @@ nav {
   position: fixed;
   width: 100%;
   padding: 5vw 2vw;
-  top: -100vh;
-  transition: 1.5s ease-in-out;
-  height: 100vh;
+  top: -20vh;
+  transition: 1s ease-in-out;
+  height: 10vh;
   background-color: white;
+  overflow: hidden;
+}
+
+nav.active {
+  top: 0;
+  height: 100vh;
+  transition: 1s ease-in-out;
 }
 
 nav p {
@@ -43,24 +54,28 @@ nav p.active::after {
   transition: 0.5s ease-in-out;
 }
 
-nav.active {
-  top: 0;
-  transition: 1.5s ease-in-out;
-}
-
 header {
   width: 100%;
-  padding: 2vw;
+  padding: 3vw;
   position: fixed;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  height: 2vw;
-  gap: 0vw;
+  /* height: 2vw; */
+  gap: 2vw;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+}
+
+.m {
+  display: flex;
+  flex-direction: column;
+}
+
+.reversedM {
+  rotate: 180deg;
 }
 
 .logo.active {
@@ -69,15 +84,15 @@ header {
 }
 
 .logo img {
-  width: 4vw;
-  height: auto;
+  width: 2.75vw;
+  height: 2.75vw;
 }
 
 #logoArrow {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   height: 80%;
-  gap: 0.5vw;
+  gap: 2vw;
   transition: 0.5s ease-in;
 }
 
@@ -90,10 +105,15 @@ nav p {
   font-size: 2.3vw;
   font-family: 'NAMU';
   font-weight: 500;
+  transition: all ease 0.6s;
 }
 
 #logoArrow p {
   height: 187%;
+  /* animation: fonts 4s infinite alternate; */
+}
+#logoArrow p:hover {
+  font-weight: 700;
 }
 
 #logoArrow img {
@@ -104,4 +124,30 @@ nav p {
 #logoArrow img.active {
   rotate: 90deg;
   transition: 0.5s ease-in;
+}
+
+@keyframes fonts {
+  0% {
+    font-weight: 200;
+  }
+  20% {
+    font-weight: 300;
+  }
+  40% {
+    font-weight: 400;
+  }
+  60% {
+    font-weight: 500;
+  }
+  80% {
+    font-weight: 600;
+  }
+  100% {
+    font-weight: 200;
+  }
+}
+
+path {
+  height: 10vw;
+  width: 10vw;
 }

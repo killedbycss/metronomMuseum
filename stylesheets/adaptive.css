@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px) {
+  #logoArrow p,
+  nav p {
+    font-size: 9.9vw;
+  }
+
+  #logoArrow p {
+    line-height: 0.14vw;
+  }
+
+  #logoArrow img {
+    width: 1.43vw;
+    height: auto;
+  }
+}
