@@ -142,7 +142,7 @@ if(a29 && st29) a29.addEventListener('click', () => { st29.style.display = 'flex
 if(a25 && st25) a25.addEventListener('click', () => { st25.style.display = 'flex' })
 if(a26 && st26) a26.addEventListener('click', () => { st26.style.display = 'flex' })
 if(a27 && st27) a27.addEventListener('click', () => { st27.style.display = 'flex' })
-if(a28 && st28) a27.addEventListener('click', () => { st28.style.display = 'flex' })
+if(a28 && st28) a28.addEventListener('click', () => { st28.style.display = 'flex' })
 if(a197 && st197) a197.addEventListener('click', () => { st197.style.display = 'flex' })
 if(a24 && st24) a24.addEventListener('click', () => { st24.style.display = 'flex' })
 if(a23 && st23) a23.addEventListener('click', () => { st23.style.display = 'flex' })
@@ -272,21 +272,21 @@ if(a33 && st33) a33.addEventListener('click', () => { st33.style.display = 'flex
       } else if (part == 7) {
         pt8.style.display = 'none'
         pt9.style.display = 'flex'
-        timeline.style.marginLeft = '-1778vw'
+        timeline.style.marginLeft = '-1732vw'
         part = 8
-        year.innerText = '2017'
+        year.innerText = '2015'
       } else if (part == 8) {
         pt9.style.display = 'none'
         pt10.style.display = 'flex'
-        timeline.style.marginLeft = '-1800vw'
+        timeline.style.marginLeft = '-1778vw'
         part = 9
-        year.innerText = '2018'
+        year.innerText = '2017'
       } else if (part == 9) {
         pt10.style.display = 'none'
         pt11.style.display = 'flex'
-        timeline.style.marginLeft = '-1912vw'
+        timeline.style.marginLeft = '-1800vw'
         part = 10
-        year.innerText = '2023'
+        year.innerText = '2018'
         next.innerText = '3 >'
         next.style.backgroundColor = 'var(--3)'
       } else if (part == 10) {
@@ -352,13 +352,13 @@ if(a33 && st33) a33.addEventListener('click', () => { st33.style.display = 'flex
         pt10.style.display = 'none'
         timeline.style.marginLeft = '-1778vw'
         part = 8
-        year.innerText = '2017'
+        year.innerText = '2015'
       } else if (part == 10) {
         pt10.style.display = 'flex'
         pt11.style.display = 'none'
         timeline.style.marginLeft = '-1800vw'
         part = 9
-        year.innerText = '2018'
+        year.innerText = '2017'
         next.innerText = '>'
         next.style.backgroundColor = 'var(--text)'
       }
