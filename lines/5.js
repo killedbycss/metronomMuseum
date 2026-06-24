@@ -51,22 +51,11 @@ function burgerOther() {
 }
 
 function line() {
-    var pt1 = document.getElementById('c1n1')
-    var pt2 = document.getElementById('c1n2')
-    var pt3 = document.getElementById('c1n3')
-    var pt4 = document.getElementById('c1n4')
-    var pt5 = document.getElementById('c1n5')
-    var pt6 = document.getElementById('c1n6')
-    var pt7 = document.getElementById('c1n7')
-    var pt8 = document.getElementById('c1n8')
-    var pt9 = document.getElementById('c1n9')
-    var pt10 = document.getElementById('c1n10')
-    var pt11 = document.getElementById('c1n11')
-    var pt12 = document.getElementById('c1n12')
-    var pt13 = document.getElementById('c1n13')
-    var pt14 = document.getElementById('c1n14')
-    var pt15 = document.getElementById('c1n15')
-    var pt16 = document.getElementById('c1n16')
+    var pt1 = document.getElementById('n1')
+    var pt2 = document.getElementById('n2')
+    var pt3 = document.getElementById('n3')
+    var pt4 = document.getElementById('n4')
+    var pt5 = document.getElementById('n5')
 
     var timeline = document.querySelector('.years')
     var next = document.getElementById('nextYear')
@@ -75,12 +64,31 @@ function line() {
 
     var part = 0
 
+    var allSliders = document.querySelectorAll('.sliderImg1')
+    var allSliders2 = document.querySelectorAll('.sliderImg2')
+    
     var leftArrow = document.getElementById('leftArrow')
     var rightArrow = document.getElementById('rightArrow')
-    var fr1 = document.querySelector('.sliderImg1')
-    var fr2 = document.querySelector('.sliderImg2')
+    var fr1 = allSliders[0]
+    var fr2 = allSliders2[0]
+    var fr1b = allSliders[1]
+    var fr2b = allSliders2[1]
+    var fr1c = allSliders[2]
+    var fr2c = allSliders2[2]
+    var fr1d = allSliders[3]
+    var fr2d = allSliders2[3]
+    var fr1e = allSliders[4]
+    var fr2e = allSliders2[4]
     var td1 = document.getElementById('td1')
     var td2 = document.getElementById('td2')
+    var td12 = document.getElementById('td12')
+    var td22 = document.getElementById('td22')
+    var td13 = document.getElementById('td13')
+    var td23 = document.getElementById('td23')
+    var td14 = document.getElementById('td14')
+    var td24 = document.getElementById('td24')
+    var td15 = document.getElementById('td15')
+    var td25 = document.getElementById('td25')
 
     var stations = document.querySelectorAll('.station')
     var backs = document.querySelectorAll('.stBack')
@@ -91,6 +99,8 @@ function line() {
         rightArrow.style.opacity = '0'
         td1.style.display = 'none'
         td2.style.display = 'flex'
+        td1.style.opacity = '0'
+        td2.style.opacity = '1'
     })
 
     leftArrow.addEventListener('click', () => {
@@ -99,171 +109,154 @@ function line() {
         rightArrow.style.opacity = '1'
         td1.style.display = 'flex'
         td2.style.display = 'none'
+        td1.style.opacity = '1'
+        td2.style.opacity = '0'
     })
+
+    var leftArrow2 = document.getElementById('leftArrow2')
+    var rightArrow2 = document.getElementById('rightArrow2')
+    var leftArrow3 = document.getElementById('leftArrow3')
+    var rightArrow3 = document.getElementById('rightArrow3')
+    var leftArrow4 = document.getElementById('leftArrow4')
+    var rightArrow4 = document.getElementById('rightArrow4')
+    var leftArrow5 = document.getElementById('leftArrow5')
+    var rightArrow5 = document.getElementById('rightArrow5')
+
+
+    // Section 2
+    rightArrow2.addEventListener('click', () => {
+        leftArrow2.style.opacity = '1'
+        fr1b.style.marginLeft = '-40vw'
+        rightArrow2.style.opacity = '0'
+        td12.style.display = 'none'
+        td22.style.display = 'flex'
+        td12.style.opacity = '0'
+        td22.style.opacity = '1'
+    })
+    leftArrow2.addEventListener('click', () => {
+        leftArrow2.style.opacity = '0'
+        fr1b.style.marginLeft = '0'
+        rightArrow2.style.opacity = '1'
+        td12.style.display = 'flex'
+        td22.style.display = 'none'
+        td12.style.opacity = '1'
+        td22.style.opacity = '0'
+    })
+
+    // Section 3
+    rightArrow3.addEventListener('click', () => {
+        leftArrow3.style.opacity = '1'
+        fr1c.style.marginLeft = '-40vw'
+        rightArrow3.style.opacity = '0'
+        td13.style.display = 'none'
+        td23.style.display = 'flex'
+        td13.style.opacity = '0'
+        td23.style.opacity = '1'
+    })
+    leftArrow3.addEventListener('click', () => {
+        leftArrow3.style.opacity = '0'
+        fr1c.style.marginLeft = '0'
+        rightArrow3.style.opacity = '1'
+        td13.style.display = 'flex'
+        td23.style.display = 'none'
+        td13.style.opacity = '1'
+        td23.style.opacity = '0'
+    })
+
+    // Section 4
+    rightArrow4.addEventListener('click', () => {
+        leftArrow4.style.opacity = '1'
+        fr1d.style.marginLeft = '-40vw'
+        rightArrow4.style.opacity = '0'
+        td14.style.display = 'none'
+        td24.style.display = 'flex'
+        td14.style.opacity = '0'
+        td24.style.opacity = '1'
+    })
+    leftArrow4.addEventListener('click', () => {
+        leftArrow4.style.opacity = '0'
+        fr1d.style.marginLeft = '0'
+        rightArrow4.style.opacity = '1'
+        td14.style.display = 'flex'
+        td24.style.display = 'none'
+        td14.style.opacity = '1'
+        td24.style.opacity = '0'
+    })
+
+    // Section 5
+    rightArrow5.addEventListener('click', () => {
+        leftArrow5.style.opacity = '1'
+        fr1e.style.marginLeft = '-40vw'
+        rightArrow5.style.opacity = '0'
+        td15.style.display = 'none'
+        td25.style.display = 'flex'
+        td15.style.opacity = '0'
+        td25.style.opacity = '1'
+    })
+    leftArrow5.addEventListener('click', () => {
+        leftArrow5.style.opacity = '0'
+        fr1e.style.marginLeft = '0'
+        rightArrow5.style.opacity = '1'
+        td15.style.display = 'flex'
+        td25.style.display = 'none'
+        td15.style.opacity = '1'
+        td25.style.opacity = '0'
+    })
+
 
     next.addEventListener('click', () => {
       if (part == 0) {
+        pt1.style.display = 'none'
+        pt2.style.display = 'flex'
+        timeline.style.marginLeft = '-46vw'
+        part = 1
+        year.innerText = '1952'
+        past.style = 'background-color: var(--text)'
+        past.innerText = '<'
+      } else if (part == 1) {
         pt2.style.display = 'none'
         pt3.style.display = 'flex'
-        timeline.style.marginLeft = '-46vw'
-        part = 1
-        year.innerText = '1937'
-      } else if (part == 1) {
+        timeline.style.marginLeft = '-90vw'
+        part = 2
+        year.innerText = '1954'
+      } else if (part == 2) {
         pt3.style.display = 'none'
         pt4.style.display = 'flex'
-        timeline.style.marginLeft = '-69vw'
-        part = 2
-        year.innerText = '1938'
-      } else if (part == 2) {
-        pt4.style.display = 'none'
-        pt5.style.display = 'flex'
-        timeline.style.marginLeft = '-496vw'
+        timeline.style.marginLeft = '-1801vw'
         part = 3
-        year.innerText = '1957'
-      } else if (part == 3) {
-        pt5.style.display = 'none'
-        pt6.style.display = 'flex'
-        timeline.style.marginLeft = '-540vw'
-        part = 4
-        year.innerText = '1959'
-      } else if (part == 4) {
-        pt6.style.display = 'none'
-        pt7.style.display = 'flex'
-        timeline.style.marginLeft = '-630vw'
-        part = 5
-        year.innerText = '1963'
-      } else if (part == 5) {
-        pt7.style.display = 'none'
-        pt8.style.display = 'flex'
-        timeline.style.marginLeft = '-676vw'
-        part = 6
-        year.innerText = '1965'
-      } else if (part == 6) {
-        pt8.style.display = 'none'
-        pt9.style.display = 'flex'
-        timeline.style.marginLeft = '-1080vw'
-        part = 7
-        year.innerText = '1983'
-      } else if (part == 7) {
-        pt9.style.display = 'none'
-        pt10.style.display = 'flex'
-        timeline.style.marginLeft = '-1238vw'
-        part = 8
-        year.innerText = '1990'
-      } else if (part == 8) {
-        pt10.style.display = 'none'
-        pt11.style.display = 'flex'
-        timeline.style.marginLeft = '-1530vw'
-        part = 9
-        year.innerText = '2003'
-      } else if (part == 9) {
-        pt11.style.display = 'none'
-        pt12.style.display = 'flex'
-        timeline.style.marginLeft = '-1778vw'
-        part = 10
-        year.innerText = '2014'
-      } else if (part == 10) {
-        pt12.style.display = 'none'
-        pt13.style.display = 'flex'
-        timeline.style.marginLeft = '-1823vw'
-        part = 11
-        year.innerText = '2016'
-      } else if (part == 11) {
-        pt13.style.display = 'none'
-        pt14.style.display = 'flex'
-        timeline.style.marginLeft = '-1890vw'
-        part = 12
-        year.innerText = '2019'
-      } else if (part == 12) {
-        pt14.style.display = 'none'
-        pt15.style.display = 'flex'
-        timeline.style.marginLeft = '-2003vw'
-        part = 13
-        year.innerText = '2024'
+        year.innerText = '2030'
+        next.style.opacity = '0.5'
+        next.style.pointerEvents = 'none'
       }
-    })
+    }) 
 
     past.addEventListener('click', () => {
-      if (part == 1) {
+      if (part == 0) {
+         window.location.href = '4.html'
+      } else if (part == 1) {
+        pt1.style.display = 'flex'
+        pt2.style.display = 'none'
+        timeline.style.marginLeft = '0vw'
+        part = 0
+        year.innerText = '1950'
+        past.style = 'background-color: var(--4)'
+        past.innerText = '< 4'
+      } else if (part == 2) {
         pt2.style.display = 'flex'
         pt3.style.display = 'none'
-        timeline.style.marginLeft = '0'
-        part = 0
-        year.innerText = '1935'
-      } else if (part == 2) {
-        pt3.style.display = 'flex'
-        pt4.style.display = 'none'
         timeline.style.marginLeft = '-46vw'
         part = 1
-        year.innerText = '1937'
+        year.innerText = '1952'
       } else if (part == 3) {
-        pt4.style.display = 'flex'
-        pt5.style.display = 'none'
-        timeline.style.marginLeft = '-69vw'
+        pt3.style.display = 'flex'
+        pt4.style.display = 'none'
+        timeline.style.marginLeft = '-90vw'
         part = 2
-        year.innerText = '1938'
-      } else if (part == 4) {
-        pt5.style.display = 'flex'
-        pt6.style.display = 'none'
-        timeline.style.marginLeft = '-496vw'
-        part = 3
-        year.innerText = '1957'
-      } else if (part == 5) {
-        pt6.style.display = 'flex'
-        pt7.style.display = 'none'
-        timeline.style.marginLeft = '-540vw'
-        part = 4
-        year.innerText = '1959'
-      } else if (part == 6) {
-        pt7.style.display = 'flex'
-        pt8.style.display = 'none'
-        timeline.style.marginLeft = '-630vw'
-        part = 5
-        year.innerText = '1963'
-      } else if (part == 7) {
-        pt8.style.display = 'flex'
-        pt9.style.display = 'none'
-        timeline.style.marginLeft = '-676vw'
-        part = 6
-        year.innerText = '1965'
-      } else if (part == 8) {
-        pt9.style.display = 'flex'
-        pt10.style.display = 'none'
-        timeline.style.marginLeft = '-1080vw'
-        part = 7
-        year.innerText = '1983'
-      } else if (part == 9) {
-        pt10.style.display = 'flex'
-        pt11.style.display = 'none'
-        timeline.style.marginLeft = '-1238vw'
-        part = 8
-        year.innerText = '1990'
-      } else if (part == 10) {
-        pt11.style.display = 'flex'
-        pt12.style.display = 'none'
-        timeline.style.marginLeft = '-1530vw'
-        part = 9
-        year.innerText = '2003'
-      } else if (part == 11) {
-        pt12.style.display = 'flex'
-        pt13.style.display = 'none'
-        timeline.style.marginLeft = '-1778vw'
-        part = 10
-        year.innerText = '2014'
-      } else if (part == 12) {
-        pt13.style.display = 'flex'
-        pt14.style.display = 'none'
-        timeline.style.marginLeft = '-1823vw'
-        part = 11
-        year.innerText = '2016'
-      } else if (part == 13) {
-        pt14.style.display = 'flex'
-        pt15.style.display = 'none'
-        timeline.style.marginLeft = '-1890vw'
-        part = 12
-        year.innerText = '2019'
+        year.innerText = '1954'
+        next.style.opacity = '0.5'
+        next.style.pointerEvents = 'none'
       }
-    })
+    }) 
 
     for (var i = 0; i < backs.length; i++) {
         backs[i].addEventListener('click', () => {
@@ -272,48 +265,4 @@ function line() {
             }
         })
     }
-
-    // a13.addEventListener('click', () => {
-    //   st13.style.display = 'flex'
-    // })
-    // a12.addEventListener('click', () => {
-    //   st12.style.display = 'flex'
-    // })
-    // a11.addEventListener('click', () => {
-    //   st11.style.display = 'flex'
-    // })
-    // a10.addEventListener('click', () => {
-    //   st10.style.display = 'flex'
-    // })
-    // a9.addEventListener('click', () => {
-    //   st9.style.display = 'flex'
-    // })
-    // a8.addEventListener('click', () => {
-    //   st8.style.display = 'flex'
-    // })
-    // a7.addEventListener('click', () => {
-    //   st7.style.display = 'flex'
-    // })
-    // a6.addEventListener('click', () => {
-    //   st6.style.display = 'flex'
-    // })
-    // a5.addEventListener('click', () => {
-    //   st5.style.display = 'flex'
-    // })
-    // a4.addEventListener('click', () => {
-    //   st4.style.display = 'flex'
-    // })
-    // a71.addEventListener('click', () => {
-    //   st71.style.display = 'flex'
-    // })
-    // a70.addEventListener('click', () => {
-    //   st70.style.display = 'flex'
-    // })
-    // a69.addEventListener('click', () => {
-    //   st69.style.display = 'flex'
-    // })
-
-    // back.addEventListener('click', () => {
-    //   station.style.display = 'none'
-    // })
   }

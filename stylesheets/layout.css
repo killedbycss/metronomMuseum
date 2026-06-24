@@ -713,6 +713,10 @@ header.active {
   padding: 4vw;
 }
 
+#n1 {
+  display: flex;
+}
+
 .dark {
   position: absolute;
   width: 100%;
