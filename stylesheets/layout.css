@@ -480,6 +480,10 @@ header.active {
   display: flex;
 }
 
+#n1 {
+  display: flex;
+}
+
 .slide {
   position: fixed;
   display: flex;

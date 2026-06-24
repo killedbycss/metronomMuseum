@@ -233,7 +233,7 @@ if(a33 && st33) a33.addEventListener('click', () => { st33.style.display = 'flex
         timeline.style.marginLeft = '-1912vw'
         part = 10
         year.innerText = '2023'
-        next.innerText = '3>'
+        next.innerText = '3 >'
         next.style.backgroundColor = 'var(--3)'
       } else if (part == 10) {
         zone.style.backgroundColor = 'var(--3)'
