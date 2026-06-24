@@ -174,6 +174,53 @@ if(a33 && st33) a33.addEventListener('click', () => { st33.style.display = 'flex
         td2.style.opacity = '0'
     })
 
+    // Слайдеры 2-12
+    var allSliderImg1 = document.querySelectorAll('.sliderImg1')
+    var allSliderImg2 = document.querySelectorAll('.sliderImg2')
+
+    for (var i = 2; i <= 12; i++) {
+        (function(sliderNum) {
+            var leftArr = document.getElementById('leftArrow' + sliderNum)
+            var rightArr = document.getElementById('rightArrow' + sliderNum)
+            var td1Elem = document.getElementById('td1' + sliderNum)
+            var td2Elem = document.getElementById('td2' + sliderNum)
+            var img1 = allSliderImg1[sliderNum - 1]
+            var img2 = allSliderImg2[sliderNum - 1]
+
+            if (rightArr) {
+                rightArr.addEventListener('click', () => {
+                    if (leftArr) leftArr.style.opacity = '1'
+                    if (img1) img1.style.marginLeft = '-40vw'
+                    if (rightArr) rightArr.style.opacity = '0'
+                    if (td1Elem) {
+                        td1Elem.style.display = 'none'
+                        td1Elem.style.opacity = '0'
+                    }
+                    if (td2Elem) {
+                        td2Elem.style.display = 'flex'
+                        td2Elem.style.opacity = '1'
+                    }
+                })
+            }
+
+            if (leftArr) {
+                leftArr.addEventListener('click', () => {
+                    if (leftArr) leftArr.style.opacity = '0'
+                    if (img1) img1.style.marginLeft = '0'
+                    if (rightArr) rightArr.style.opacity = '1'
+                    if (td1Elem) {
+                        td1Elem.style.display = 'flex'
+                        td1Elem.style.opacity = '1'
+                    }
+                    if (td2Elem) {
+                        td2Elem.style.display = 'none'
+                        td2Elem.style.opacity = '0'
+                    }
+                })
+            }
+        })(i)
+    }
+
     next.addEventListener('click', () => {
       if (part == 0) {
         pt1.style.display = 'none'
