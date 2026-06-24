@@ -68,7 +68,6 @@ function line() {
     var next = document.getElementById('nextYear')
     var past = document.getElementById('pastYear')
     var year = document.querySelector('.timeZone h2')
-    var zone = document.querySelector('.timeZone')
 
     var part = 0
 
@@ -92,6 +91,7 @@ var st30 = document.getElementById('st030')
 var st29 = document.getElementById('st029')
 var st25 = document.getElementById('st025')
 var st27 = document.getElementById('st027')
+var st28 = document.getElementById('st028')
 var st197 = document.getElementById('st197')
 var st24 = document.getElementById('st024')
 var st23 = document.getElementById('st023')
@@ -115,6 +115,7 @@ var a30 = document.getElementById('a030')
 var a29 = document.getElementById('a029')
 var a25 = document.getElementById('a025')
 var a27 = document.getElementById('a027')
+var a28 = document.getElementById('a028')
 var a197 = document.getElementById('a197')
 var a24 = document.getElementById('a024')
 var a23 = document.getElementById('a023')
@@ -138,6 +139,7 @@ if(a30 && st30) a30.addEventListener('click', () => { st30.style.display = 'flex
 if(a29 && st29) a29.addEventListener('click', () => { st29.style.display = 'flex' })
 if(a25 && st25) a25.addEventListener('click', () => { st25.style.display = 'flex' })
 if(a27 && st27) a27.addEventListener('click', () => { st27.style.display = 'flex' })
+if(a28 && st28) a27.addEventListener('click', () => { st28.style.display = 'flex' })
 if(a197 && st197) a197.addEventListener('click', () => { st197.style.display = 'flex' })
 if(a24 && st24) a24.addEventListener('click', () => { st24.style.display = 'flex' })
 if(a23 && st23) a23.addEventListener('click', () => { st23.style.display = 'flex' })
@@ -179,6 +181,8 @@ if(a33 && st33) a33.addEventListener('click', () => { st33.style.display = 'flex
         timeline.style.marginLeft = '-113vw'
         part = 1
         year.innerText = '1943'
+        past.innerText = '<'
+        past.style.backgroundColor = 'var(--text)'
       } else if (part == 1) {
         pt2.style.display = 'none'
         pt3.style.display = 'flex'
@@ -236,7 +240,6 @@ if(a33 && st33) a33.addEventListener('click', () => { st33.style.display = 'flex
         next.innerText = '3 >'
         next.style.backgroundColor = 'var(--3)'
       } else if (part == 10) {
-        zone.style.backgroundColor = 'var(--3)'
         window.location.href = '3.html'
       }
   })
@@ -306,6 +309,8 @@ if(a33 && st33) a33.addEventListener('click', () => { st33.style.display = 'flex
         timeline.style.marginLeft = '-1800vw'
         part = 9
         year.innerText = '2018'
+        next.innerText = '>'
+        next.style.backgroundColor = 'var(--text)'
       }
   })
 

@@ -252,7 +252,7 @@ if(a40 && st40) a40.addEventListener('click', () => { st40.style.display = 'flex
       } else if (part == 12) {
         pt13.style.display = 'none'
         pt14.style.display = 'flex'
-        timeline.style.marginLeft = '-2048vw'
+        timeline.style.marginLeft = '-2071vw'
         part = 13
         year.innerText = '2028'
         next.innerText = '4 >'

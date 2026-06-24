@@ -55,7 +55,7 @@ function line() {
     var pt2 = document.getElementById('n2')
     var pt3 = document.getElementById('n3')
     var pt4 = document.getElementById('n4')
-    var pt5 = document.getElementById('n5')
+    // var pt5 = document.getElementById('n5')
 
     var timeline = document.querySelector('.years')
     var next = document.getElementById('nextYear')
@@ -183,25 +183,25 @@ function line() {
         td24.style.opacity = '0'
     })
 
-    // Section 5
-    rightArrow5.addEventListener('click', () => {
-        leftArrow5.style.opacity = '1'
-        fr1e.style.marginLeft = '-40vw'
-        rightArrow5.style.opacity = '0'
-        td15.style.display = 'none'
-        td25.style.display = 'flex'
-        td15.style.opacity = '0'
-        td25.style.opacity = '1'
-    })
-    leftArrow5.addEventListener('click', () => {
-        leftArrow5.style.opacity = '0'
-        fr1e.style.marginLeft = '0'
-        rightArrow5.style.opacity = '1'
-        td15.style.display = 'flex'
-        td25.style.display = 'none'
-        td15.style.opacity = '1'
-        td25.style.opacity = '0'
-    })
+    // // Section 5
+    // rightArrow5.addEventListener('click', () => {
+    //     leftArrow5.style.opacity = '1'
+    //     fr1e.style.marginLeft = '-40vw'
+    //     rightArrow5.style.opacity = '0'
+    //     td15.style.display = 'none'
+    //     td25.style.display = 'flex'
+    //     td15.style.opacity = '0'
+    //     td25.style.opacity = '1'
+    // })
+    // leftArrow5.addEventListener('click', () => {
+    //     leftArrow5.style.opacity = '0'
+    //     fr1e.style.marginLeft = '0'
+    //     rightArrow5.style.opacity = '1'
+    //     td15.style.display = 'flex'
+    //     td25.style.display = 'none'
+    //     td15.style.opacity = '1'
+    //     td25.style.opacity = '0'
+    // })
 
 
     next.addEventListener('click', () => {
