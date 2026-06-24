@@ -156,6 +156,10 @@ function line() {
     var a1 = document.getElementById('a001')
     var a2 = document.getElementById('a002')
     var a3 = document.getElementById('a003')
+    var a18 = document.getElementById('a018')
+    var a19 = document.getElementById('a019')
+    var st18 = document.getElementById('st018')
+    var st19 = document.getElementById('st019')
 
     if(a13 && st13) a13.addEventListener('click', () => { st13.style.display = 'flex' })
     if(a12 && st12) a12.addEventListener('click', () => { st12.style.display = 'flex' })
@@ -186,7 +190,9 @@ function line() {
     if(a1 && st1) a1.addEventListener('click', () => { st1.style.display = 'flex' })
     if(a2 && st2) a2.addEventListener('click', () => { st2.style.display = 'flex' })
     if(a3 && st3) a3.addEventListener('click', () => { st3.style.display = 'flex' })
-  
+    if(a18 && st18) a18.addEventListener('click', () => { st18.style.display = 'flex' })
+    if(a19 && st19) a19.addEventListener('click', () => { st19.style.display = 'flex' })
+
 
     var stations = document.querySelectorAll('.station')
     var backs = document.querySelectorAll('.stBack')

@@ -90,6 +90,9 @@ function line() {
     var td15 = document.getElementById('td15')
     var td25 = document.getElementById('td25')
 
+    var a76 = document.getElementById('a076')
+    var st76 = document.getElementById('st076')
+
     var stations = document.querySelectorAll('.station')
     var backs = document.querySelectorAll('.stBack')
 
@@ -203,6 +206,7 @@ function line() {
     //     td25.style.opacity = '0'
     // })
 
+    if(a76 && st76) a76.addEventListener('click', () => { st76.style.display = 'flex' })
 
     next.addEventListener('click', () => {
       if (part == 0) {
