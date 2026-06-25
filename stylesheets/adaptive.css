@@ -206,7 +206,7 @@
 
     a {
   font-size: 2vw;
-  margin: 0; 
+  margin: 0;
     }
     .standart {
         top: 5vw;
@@ -224,10 +224,16 @@
         height: 8vw;
         padding: 1.5vw 2vw 0vw 2vw;
     }
+    header h1 {
+        cursor: pointer;
+    }
     .menu {
         display: flex;
         gap: 5vw;
         margin-left: -1vw;
+    }
+    .menu h1 {
+        cursor: pointer;
     }
     .timeDesc {
         padding: 4vw 2vw;
@@ -244,6 +250,13 @@
     .yearLn {
         width: 2.7vw;
         height: 2.7vw;
+    }
+    nav {
+        display: none;
+    }
+    header.active {
+        outline: 0.1vw solid var(--text);
+        box-shadow: none;
     }
 }
 
@@ -275,7 +288,7 @@
 
     a {
   font-size: 1.5vw;
-  margin: 0; 
+  margin: 0;
     }
     .standart {
         top: 5vw;
@@ -293,10 +306,16 @@
         height: 8vw;
         padding: 1.5vw 2vw 0vw 2vw;
     }
+    header h1 {
+        cursor: pointer;
+    }
     .menu {
         display: flex;
         gap: 5vw;
         margin-left: -1vw;
+    }
+    .menu h1 {
+        cursor: pointer;
     }
     .timeDesc {
         padding: 4vw 2vw;
@@ -344,7 +363,7 @@
 
     a {
   font-size: 1.5vw;
-  margin: 0; 
+  margin: 0;
     }
     .standart {
         top: 5vw;
@@ -362,10 +381,16 @@
         height: 6vw;
         padding: 1.5vw 2vw 0vw 2vw;
     }
+    header h1 {
+        cursor: pointer;
+    }
     .menu {
         display: flex;
         gap: 5vw;
         margin-left: -1vw;
+    }
+    .menu h1 {
+        cursor: pointer;
     }
     .timeDesc {
         padding: 2vw 2vw;
