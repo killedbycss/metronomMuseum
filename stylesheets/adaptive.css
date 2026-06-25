@@ -72,6 +72,16 @@
         height: 16vw;
         padding: 0 4vw;
     }
+    .info {
+        margin-top: 16vw;
+    }
+    nav {
+        margin-top: 4vw;
+        height: 130vh;
+    }
+    .blocks {
+        top: 16vw;
+    }
     .logo {
         height: 38%;
     }
@@ -85,6 +95,9 @@
         width: 4vw;
         height: 4vw;
     }
+    #mus {
+        top: 20vw;
+    } 
 
     /* Линия 2: показываем оба timeDesc на широких экранах */
     [id^="n"]:nth-of-type(n+2) #td2,
@@ -160,8 +173,15 @@
         height: 12vw;
         padding: 0 4vw;
     }
+    .info {
+        margin-top: 12vw;
+    }
+    nav {
+        margin-top: 0vw;
+        height: 120%;
+    }
     .logo {
-        height: 15%;
+        height: 7%;
     }
     .timeline {
         height: 15vw;
@@ -175,6 +195,66 @@
     }
     .divider {
         width: 0.1vw;
+    }
+    #mus {
+        gap: 3vw;
+        top: 16vw;
+    }
+    .blocks {
+        flex-direction: row;
+        top: 12vw;
+    }
+    .info {
+        flex-direction: row;
+    }
+    .infoButtons {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+    }
+    .info h2 {
+        width: 40vw;
+    }
+    .infoButtons button {
+        height: 29vh;
+    }
+    .infoButtons .row button {
+        width: 50%;
+        height: 29vh;
+    }
+    .bigButton {
+        width: 100%;
+    }
+    .bigBlock {
+        width: 50vw;
+        height: 50vw;
+    }
+    #qui {
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    .smallBlock {
+        width: 23vw;
+        height: 23vw;
+    }
+    /* #q11 .row button,
+    #q21 .row button,
+    #q31 .row button,
+    #q41 .row button,
+    #q51 .row button,
+    #q61 .row button,
+    #q12 .row button,
+    #q22 .row button,
+    #q32 .row button,
+    #q42 .row button,
+    #q52 .row button,
+    #q62 .row button  {
+        height: 40vh;
+    } */
+    #qs6 .bigButton {
+        height: 40vh;
     }
 }
 
@@ -224,13 +304,22 @@
         height: 8vw;
         padding: 1.5vw 2vw 0vw 2vw;
     }
+    .info {
+        margin-top: 8svb;
+    }
+    .blocks {
+        top: 8vw;
+    }
+    nav {
+        margin-top: 8vw;
+    }
     header h1 {
         cursor: pointer;
     }
     .menu {
         display: flex;
-        gap: 5vw;
-        margin-left: -1vw;
+        gap: 3vw;
+        margin-left: 4vw;
     }
     .menu h1 {
         cursor: pointer;
@@ -239,7 +328,7 @@
         padding: 4vw 2vw;
     }
     .logo {
-        height: 35%;
+        height: 5%;
     }
     .timeline {
         height: 15vw;
@@ -258,6 +347,39 @@
         outline: 0.1vw solid var(--text);
         box-shadow: none;
     }
+    #mus {
+        gap: 2vw;
+        top: 10vw;
+    }
+    .chImg {
+        height: auto;
+    }
+    #mus {
+       flex-direction: row;
+    }
+    .ln {
+        width: 11.3vw;
+    }
+    .ch {
+        width: 33.9vw;
+    }
+    .lines {
+        width: 40vw;
+        flex-direction: row;
+    }
+    .ch Img {
+        width: 11.3vw;
+        height: 11.3vw;
+    }
+    #chInfo {
+        padding: 2vw;
+    }
+    #musDesc {
+        width: 30vw;
+    }
+    #mus h2 {
+        width: 30vw;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -267,11 +389,11 @@
     }
 
     h2 {
-  font-size: 3vw;
+  font-size: 2vw;
     }
 
     h3 {
-  font-size: 2.5vw;
+  font-size: 1.75vw;
     }
 
     h4 {
@@ -302,26 +424,8 @@
         width: 30vw;
         height: 30vw;
     }
-    header {
-        height: 8vw;
-        padding: 1.5vw 2vw 0vw 2vw;
-    }
-    header h1 {
-        cursor: pointer;
-    }
-    .menu {
-        display: flex;
-        gap: 5vw;
-        margin-left: -1vw;
-    }
-    .menu h1 {
-        cursor: pointer;
-    }
     .timeDesc {
         padding: 4vw 2vw;
-    }
-    .logo {
-        height: 35%;
     }
     .timeline {
         height: 15vw;
@@ -381,22 +485,20 @@
         height: 6vw;
         padding: 1.5vw 2vw 0vw 2vw;
     }
+    .info {
+        margin-top: 6vw;
+    }
+    .blocks {
+        top: 6vw;
+    }
     header h1 {
         cursor: pointer;
-    }
-    .menu {
-        display: flex;
-        gap: 5vw;
-        margin-left: -1vw;
     }
     .menu h1 {
         cursor: pointer;
     }
     .timeDesc {
         padding: 2vw 2vw;
-    }
-    .logo {
-        height: 0%;
     }
     .timeline {
         height: 10vw;

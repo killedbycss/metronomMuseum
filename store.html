@@ -6,6 +6,7 @@
     <title>метроном музей</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script defer src="javascripts/script.js"></script>
+     <script defer src="javascripts/store.js"></script>
     <link rel="icon" href="contents/meta/icon.ico" />
     <link rel="stylesheet" href="contents/meta/icon.png" />
 
@@ -32,8 +33,8 @@
         <h4 class="logoPart">м</h4>
         <h4 class="logoPart" id="rotated">м</h4>
       </div>
-      <h1>магазин</h1>
-      <svg
+      <h1>магазин музея</h1>
+      <!-- <svg
         class="arrow"
         width="9"
         height="19"
@@ -48,12 +49,12 @@
           stroke-width="3"
           stroke-linecap="round"
         />
-      </svg>
+      </svg> -->
       <div class="menu">
        <h1 id="headerHistory">история</h1>
        <h1 id="headerQuiz">квизы</h1>
        <h1 id="headerAbout">о проекте</h1>
-       <h1 id="headerStore">магазин</h1>
+       <h1 id="headerStore" style="display: none;">магазин</h1>
        <h1 id="headerCollection">коллекция</h1>
       </div>
     </header>
@@ -82,6 +83,21 @@
           </button>
         </div>
       </div>
-    </nav> 
+    </nav>
+    <section class="blocks">
+      <div class="bigBlock" id="str1">
+        <h2>Футболка</h2>
+        <h3>5 жетонов</h3>
+      </div>
+      <div class="row" id="qui">
+        <div class="smallBlock" id="str2">
+          <h3>На данный момент у вас:</h3>
+        </div>
+        <div class="smallBlock" id="str3">
+          <h3>Сумка</h3>
+        </div>
+        </div>
+      </div>
+    </section> 
   </body>
 </html>
