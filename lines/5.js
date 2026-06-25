@@ -50,6 +50,17 @@ function burgerOther() {
   })
 }
 
+function ensureWideScreenTimeDesc() {
+    // На экранах >= 800px показываем оба timeDesc
+    if (window.innerWidth >= 800) {
+        var allTimeDescs = document.querySelectorAll('[id^="td2"]')
+        allTimeDescs.forEach(elem => {
+            elem.style.display = 'flex'
+            elem.style.opacity = '1'
+        })
+    }
+}
+
 function line() {
     var pt1 = document.getElementById('n1')
     var pt2 = document.getElementById('n2')
@@ -305,4 +316,8 @@ function line() {
             }
         })
     }
+
+    // Гарантируем правильное отображение на широких экранах
+    ensureWideScreenTimeDesc()
+    window.addEventListener('resize', ensureWideScreenTimeDesc)
   }

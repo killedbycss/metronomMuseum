@@ -58,10 +58,9 @@
         display: none;
     }
     .timeDesc {
-        padding: 2vw 1vw 2vw 1vw;
+        padding: 2vw 2vw 2vw 2vw;
         width: 33vw;
     }
-    /* На широких экранах показываем оба timeDesc */
     #td2 {
         display: flex !important;
     }
@@ -126,5 +125,23 @@
     .yearLn {
         width: 4vw;
         height: 4vw;
+    }
+
+    /* Линия 2: показываем оба timeDesc на широких экранах */
+    [id^="n"]:nth-of-type(n+2) #td2,
+    #n2 #td2, #n3 #td2, #n4 #td2, #n5 #td2, #n6 #td2, #n7 #td2, #n8 #td2, #n9 #td2, #n10 #td2, #n11 #td2, #n12 #td2 {
+        display: flex !important;
+    }
+    #td22, #td23, #td24, #td25, #td26, #td27, #td28, #td29, #td210, #td211, #td212 {
+        display: flex !important;
+    }
+    #td32, #td33, #td34, #td35, #td36, #td37, #td38, #td39, #td310, #td311, #td312, #td313, #td314 {
+        display: flex !important;
+    }
+    #td42, #td43, #td44, #td45, #td46, #td47, #td48, #td49, #td410, #td411, #td412 {
+        display: flex !important;
+    }
+    #td52, #td53, #td54, #td55, #td56, #td57, #td58, #td59, #td510, #td511, #td512, #td513 {
+        display: flex !important;
     }
 }
