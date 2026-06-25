@@ -17,7 +17,7 @@
 @media screen and (min-width: 800px) {
     h1 {
   font-size: 7vw;
-}
+    }
 
     h2 {
   font-size: 5vw;
@@ -42,6 +42,8 @@
     .standart {
         top: 16vw;
         flex-direction: row;
+        gap: 2vw;
+        padding-right: 1vw;
     }
     .slide {
         flex-direction: column;
@@ -58,52 +60,12 @@
         display: none;
     }
     .timeDesc {
-        padding: 2vw 2vw 2vw 2vw;
-        width: 33vw;
+        padding: 0;
+        margin: 2vw 0vw;
+        width: 30vw;
+        overflow-wrap: break-word
     }
-    #td2 {
-        display: flex !important;
-    }
-    #td22 {
-        display: flex !important;
-    }
-    #td23 {
-        display: flex !important;
-    }
-    #td24 {
-        display: flex !important;
-    }
-    #td25 {
-        display: flex !important;
-    }
-    #td26 {
-        display: flex !important;
-    }
-    #td27 {
-        display: flex !important;
-    }
-    #td28 {
-        display: flex !important;
-    }
-    #td29 {
-        display: flex !important;
-    }
-    #td210 {
-        display: flex !important;
-    }
-    #td211 {
-        display: flex !important;
-    }
-    #td212 {
-        display: flex !important;
-    }
-    #td213 {
-        display: flex !important;
-    }
-    #td214 {
-        display: flex !important;
-    }
-    #td215 {
+    #td2, #td22, #td23, #td23, #td24, #td25, #td26, #td27, #td28, #td29, #td210, #td211, #td212, #td213, #td214, #td215{
         display: flex !important;
     }
     header {
@@ -115,9 +77,6 @@
     }
     .timeline {
         height: 20vw;
-    }
-    .timeZone {
-        height: 100%;
     }
     .timeZone h2 {
         margin-bottom: 13vw;
@@ -143,5 +102,285 @@
     }
     #td52, #td53, #td54, #td55, #td56, #td57, #td58, #td59, #td510, #td511, #td512, #td513 {
         display: flex !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+  font-size: 4vw;
+    }
+
+    h2 {
+  font-size: 3vw;
+    }
+
+    h3 {
+  font-size: 2.5vw;
+    }
+
+    h4 {
+  font-size: 2vw;
+    }
+
+    p {
+  font-size: 2vw;
+    }
+
+    .logoPart {
+        font-size: 1vw;
+    }
+
+    a {
+  font-size: 2.5vw;
+  margin: 0; 
+    }
+    .standart {
+        top: 12vw;
+        flex-direction: row;
+    }
+    .slide {
+        flex-direction: column;
+        position: relative;
+    }
+    .slide img {
+        width: 30vw;
+        height: 30vw;
+    }
+    .sliderManager {
+        height: 50vw;
+    }
+    .sliderManager {
+        display: none;
+    }
+    .timeDesc {
+        padding: 2vw;
+        width: 33vw;
+    }
+    header {
+        height: 12vw;
+        padding: 0 4vw;
+    }
+    .logo {
+        height: 15%;
+    }
+    .timeline {
+        height: 15vw;
+    }
+    .timeZone h2 {
+        margin-bottom: 10vw;
+    }
+    .yearLn {
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+    .divider {
+        width: 0.1vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+  font-size: 2vw;
+  line-height: 100%;
+    }
+
+    h2 {
+  font-size: 3vw;
+    }
+
+    h3 {
+  font-size: 2.5vw;
+    }
+
+    h4 {
+  font-size: 2vw;
+    }
+
+    p {
+  font-size: 1.5vw;
+    }
+
+    .logoPart {
+        font-size: 1vw;
+    }
+
+    a {
+  font-size: 2vw;
+  margin: 0; 
+    }
+    .standart {
+        top: 5vw;
+        flex-direction: row;
+    }
+    .slide {
+        flex-direction: column;
+        position: relative;
+    }
+    .slide img {
+        width: 30vw;
+        height: 30vw;
+    }
+    header {
+        height: 8vw;
+        padding: 1.5vw 2vw 0vw 2vw;
+    }
+    .menu {
+        display: flex;
+        gap: 5vw;
+        margin-left: -1vw;
+    }
+    .timeDesc {
+        padding: 4vw 2vw;
+    }
+    .logo {
+        height: 35%;
+    }
+    .timeline {
+        height: 15vw;
+    }
+    .timeZone h2 {
+        margin-bottom: 10vw;
+    }
+    .yearLn {
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    h1 {
+  font-size: 2vw;
+  line-height: 100%;
+    }
+
+    h2 {
+  font-size: 3vw;
+    }
+
+    h3 {
+  font-size: 2.5vw;
+    }
+
+    h4 {
+  font-size: 2vw;
+    }
+
+    p {
+  font-size: 1.6vw;
+    }
+
+    .logoPart {
+        font-size: 1vw;
+    }
+
+    a {
+  font-size: 1.5vw;
+  margin: 0; 
+    }
+    .standart {
+        top: 5vw;
+        flex-direction: row;
+    }
+    .slide {
+        flex-direction: column;
+        position: relative;
+    }
+    .slide img {
+        width: 30vw;
+        height: 30vw;
+    }
+    header {
+        height: 8vw;
+        padding: 1.5vw 2vw 0vw 2vw;
+    }
+    .menu {
+        display: flex;
+        gap: 5vw;
+        margin-left: -1vw;
+    }
+    .timeDesc {
+        padding: 4vw 2vw;
+    }
+    .logo {
+        height: 35%;
+    }
+    .timeline {
+        height: 15vw;
+    }
+    .timeZone h2 {
+        margin-bottom: 10vw;
+    }
+    .yearLn {
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    h1 {
+  font-size: 1.75vw;
+  line-height: 100%;
+    }
+
+    h2 {
+  font-size: 1.75vw;
+    }
+
+    h3 {
+  font-size: 1.75vw;
+    }
+
+    h4 {
+  font-size: 2vw;
+    }
+
+    p {
+  font-size: 1.75vw;
+    }
+
+    .logoPart {
+        font-size: 1vw;
+    }
+
+    a {
+  font-size: 1.5vw;
+  margin: 0; 
+    }
+    .standart {
+        top: 5vw;
+        flex-direction: row;
+    }
+    .slide {
+        flex-direction: column;
+        position: relative;
+    }
+    .slide img {
+        width: 30vw;
+        height: 30vw;
+    }
+    header {
+        height: 6vw;
+        padding: 1.5vw 2vw 0vw 2vw;
+    }
+    .menu {
+        display: flex;
+        gap: 5vw;
+        margin-left: -1vw;
+    }
+    .timeDesc {
+        padding: 2vw 2vw;
+    }
+    .logo {
+        height: 0%;
+    }
+    .timeline {
+        height: 10vw;
+    }
+    .timeZone h2 {
+        margin-bottom: 7vw;
+    }
+    .yearLn {
+        width: 1.5vw;
+        height: 1.5vw;
     }
 }

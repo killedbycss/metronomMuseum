@@ -304,8 +304,8 @@ function line() {
         timeline.style.marginLeft = '-90vw'
         part = 2
         year.innerText = '1954'
-        next.style.opacity = '0.5'
-        next.style.pointerEvents = 'none'
+        next.style.opacity = '1'
+        next.style.pointerEvents = 'all'
       }
     }) 
 

@@ -120,7 +120,7 @@ header {
   align-items: center;
   width: 100%;
   height: 22.5vw;
-  padding: 8vw 4vw;
+  padding: 0vw 4vw;
   gap: 1.5vw;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -130,6 +130,10 @@ header {
   outline: 0.1vw solid var(--text);
 }
 
+.menu {
+  display: none;
+}
+
 /* Внутри хэдэра помещается группа с логотипом из двух букв м, 
 чтобы их можно было разводить при ховере */
 
@@ -137,7 +141,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 100%;
+  height: 28%;
   gap: 0.2vw;
   transition: 0.3s ease-in;
 }
@@ -292,8 +296,12 @@ header.active {
 }
 
 #musDesc {
-  padding: 0 4vw;
+  padding: 0 3vw;
   width: 100%;
+}
+
+#mus h2 {
+  padding: 0 3vw;
 }
 
 .lines {
@@ -465,6 +473,39 @@ header.active {
   background-color: var(--17);
 }
 
+#r1 h3,
+#r2 h3,
+#r3 h3,
+#r4  h3,
+#r5 h3,
+#r6 h3,
+#r7 h3,
+#r9 h3,
+#r10 h3,
+#r11 h3,
+#r12 h3,
+#r15 h3,
+#r16 h3,
+#r17 h3 {
+  color: var(--white);
+}
+
+#r1 h2,
+#r2 h2,
+#r3 h2,
+#r4  h2,
+#r5 h2,
+#r6 h3,
+#r7 h2,
+#r9 h2,
+#r10 h2,
+#r11 h2,
+#r12 h2,
+#r15 h2,
+#r16 h2,
+#r17 h2 {
+  padding: 0;
+}
 /* История линии */
 
 .standart {
