@@ -1,10 +1,11 @@
-burgerOther()
 document.addEventListener('DOMContentLoaded', () => {
   var path = window.location.pathname
 
   if (path === '/' || path.endsWith('index.html') || path === '') {
     lines()
     burgerMenu()
+  } else {
+    burgerOther()
   }
 })
 
