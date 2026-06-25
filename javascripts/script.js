@@ -17,6 +17,11 @@ function burgerMenu() {
   let about = document.getElementById('about')
   let store = document.getElementById('store')
   let collection = document.getElementById('collection')
+  let headerHistory = document.getElementById('headerHistory')
+  let headerQuiz = document.getElementById('headerQuiz')
+  let headerAbout = document.getElementById('headerAbout')
+  let headerStore = document.getElementById('headerStore')
+  let headerCollection = document.getElementById('headerCollection')
 
   burger.addEventListener('click', () => {
     header.classList.toggle('active')
@@ -55,6 +60,26 @@ function burgerMenu() {
   collection.addEventListener('click', () => {
     window.location.href = 'collection.html'
   })
+
+  if (headerHistory) headerHistory.addEventListener('click', () => {
+    window.location.href = 'index.html'
+  })
+
+  if (headerQuiz) headerQuiz.addEventListener('click', () => {
+    window.location.href = 'quiz.html'
+  })
+
+  if (headerAbout) headerAbout.addEventListener('click', () => {
+    window.location.href = 'about.html'
+  })
+
+  if (headerStore) headerStore.addEventListener('click', () => {
+    window.location.href = 'store.html'
+  })
+
+  if (headerCollection) headerCollection.addEventListener('click', () => {
+    window.location.href = 'collection.html'
+  })
 }
 
 function burgerOther() {
@@ -66,6 +91,11 @@ function burgerOther() {
   let about = document.getElementById('about')
   let store = document.getElementById('store')
   let collection = document.getElementById('collection')
+  let headerHistory = document.getElementById('headerHistory')
+  let headerQuiz = document.getElementById('headerQuiz')
+  let headerAbout = document.getElementById('headerAbout')
+  let headerStore = document.getElementById('headerStore')
+  let headerCollection = document.getElementById('headerCollection')
 
   burger.addEventListener('click', () => {
     header.classList.toggle('active')
@@ -102,6 +132,26 @@ function burgerOther() {
   })
 
   collection.addEventListener('click', () => {
+    window.location.href = '../collection.html'
+  })
+
+  if (headerHistory) headerHistory.addEventListener('click', () => {
+    window.location.href = '../index.html'
+  })
+
+  if (headerQuiz) headerQuiz.addEventListener('click', () => {
+    window.location.href = '../quiz.html'
+  })
+
+  if (headerAbout) headerAbout.addEventListener('click', () => {
+    window.location.href = '../about.html'
+  })
+
+  if (headerStore) headerStore.addEventListener('click', () => {
+    window.location.href = '../store.html'
+  })
+
+  if (headerCollection) headerCollection.addEventListener('click', () => {
     window.location.href = '../collection.html'
   })
 }
