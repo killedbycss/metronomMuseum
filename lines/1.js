@@ -12,12 +12,16 @@ function burgerOther() {
   let collection = document.getElementById('collection')
 
   burger.addEventListener('click', () => {
-    header.classList.toggle('active')
-    history.classList.toggle('active')
-    quiz.classList.toggle('active')
-    about.classList.toggle('active')
-    store.classList.toggle('active')
-    collection.classList.toggle('active')
+    if (window.innerWidth >= 1200) {
+      window.location.href = '../index.html'
+    } else {
+      header.classList.toggle('active')
+      history.classList.toggle('active')
+      quiz.classList.toggle('active')
+      about.classList.toggle('active')
+      store.classList.toggle('active')
+      collection.classList.toggle('active')
+    }
   })
 
   // altBurger.addEventListener('click', () => {
