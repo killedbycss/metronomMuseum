@@ -25,12 +25,16 @@ function burgerMenu() {
   let headerCollection = document.getElementById('headerCollection')
 
   burger.addEventListener('click', () => {
-    header.classList.toggle('active')
-    history.classList.toggle('active')
-    quiz.classList.toggle('active')
-    about.classList.toggle('active')
-    store.classList.toggle('active')
-    collection.classList.toggle('active')
+    if (window.innerWidth >= 1200) {
+      window.location.href = 'index.html'
+    } else {
+      header.classList.toggle('active')
+      history.classList.toggle('active')
+      quiz.classList.toggle('active')
+      about.classList.toggle('active')
+      store.classList.toggle('active')
+      collection.classList.toggle('active')
+    }
   })
 
   // altBurger.addEventListener('click', () => {
@@ -99,12 +103,16 @@ function burgerOther() {
   let headerCollection = document.getElementById('headerCollection')
 
   burger.addEventListener('click', () => {
-    header.classList.toggle('active')
-    history.classList.toggle('active')
-    quiz.classList.toggle('active')
-    about.classList.toggle('active')
-    store.classList.toggle('active')
-    collection.classList.toggle('active')
+    if (window.innerWidth >= 1200) {
+      window.location.href = '../index.html'
+    } else {
+      header.classList.toggle('active')
+      history.classList.toggle('active')
+      quiz.classList.toggle('active')
+      about.classList.toggle('active')
+      store.classList.toggle('active')
+      collection.classList.toggle('active')
+    }
   })
 
   // altBurger.addEventListener('click', () => {
@@ -117,43 +125,43 @@ function burgerOther() {
   // })
 
   history.addEventListener('click', () => {
-    window.location.href = '../index.html'
+    window.location.href = 'index.html'
   })
 
   quiz.addEventListener('click', () => {
-    window.location.href = '../quiz.html'
+    window.location.href = 'quiz.html'
   })
 
   about.addEventListener('click', () => {
-    window.location.href = '../about.html'
+    window.location.href = 'about.html'
   })
 
   store.addEventListener('click', () => {
-    window.location.href = '../store.html'
+    window.location.href = 'store.html'
   })
 
   collection.addEventListener('click', () => {
-    window.location.href = '../collection.html'
+    window.location.href = 'collection.html'
   })
 
   if (headerHistory) headerHistory.addEventListener('click', () => {
-    window.location.href = '../index.html'
+    window.location.href = 'index.html'
   })
 
   if (headerQuiz) headerQuiz.addEventListener('click', () => {
-    window.location.href = '../quiz.html'
+    window.location.href = 'quiz.html'
   })
 
   if (headerAbout) headerAbout.addEventListener('click', () => {
-    window.location.href = '../about.html'
+    window.location.href = 'about.html'
   })
 
   if (headerStore) headerStore.addEventListener('click', () => {
-    window.location.href = '../store.html'
+    window.location.href = 'store.html'
   })
 
   if (headerCollection) headerCollection.addEventListener('click', () => {
-    window.location.href = '../collection.html'
+    window.location.href = 'collection.html'
   })
 }
 
