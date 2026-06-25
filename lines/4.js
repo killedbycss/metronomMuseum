@@ -52,6 +52,32 @@ function burgerOther() {
   collection.addEventListener('click', () => {
     window.location.href = '../collection.html'
   })
+
+  let headerHistory = document.getElementById('headerHistory')
+  let headerQuiz = document.getElementById('headerQuiz')
+  let headerAbout = document.getElementById('headerAbout')
+  let headerStore = document.getElementById('headerStore')
+  let headerCollection = document.getElementById('headerCollection')
+
+  if (headerHistory) headerHistory.addEventListener('click', () => {
+    window.location.href = '../index.html'
+  })
+
+  if (headerQuiz) headerQuiz.addEventListener('click', () => {
+    window.location.href = '../quiz.html'
+  })
+
+  if (headerAbout) headerAbout.addEventListener('click', () => {
+    window.location.href = '../about.html'
+  })
+
+  if (headerStore) headerStore.addEventListener('click', () => {
+    window.location.href = '../store.html'
+  })
+
+  if (headerCollection) headerCollection.addEventListener('click', () => {
+    window.location.href = '../collection.html'
+  })
 }
 
 function ensureWideScreenTimeDesc() {
