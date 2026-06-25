@@ -1,2 +1,130 @@
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
+    .slide img {
+        width: 50vw;
+        height: 50vw;
+    }
+    .sliderManager {
+        height: 50vw;
+    }
+    .timeDesc {
+        padding: 53vw 3vw 34vw 2vw;
+    }
+    a {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+  font-size: 7vw;
+}
+
+    h2 {
+  font-size: 5vw;
+    }
+
+    h3 {
+  font-size: 3.5vw;
+    }
+
+    h4 {
+  font-size: 2vw;
+    }
+
+    p {
+  font-size: 2.5vw;
+    }
+
+    a {
+  font-size: 2.5vw;
+  margin: 1vw 0; 
+    }
+    .standart {
+        top: 16vw;
+        flex-direction: row;
+    }
+    .slide {
+        flex-direction: column;
+        position: relative;
+    }
+    .slide img {
+        width: 30vw;
+        height: 30vw;
+    }
+    .sliderManager {
+        height: 50vw;
+    }
+    .sliderManager {
+        display: none;
+    }
+    .timeDesc {
+        padding: 2vw 1vw 2vw 1vw;
+        width: 33vw;
+    }
+    /* На широких экранах показываем оба timeDesc */
+    #td2 {
+        display: flex !important;
+    }
+    #td22 {
+        display: flex !important;
+    }
+    #td23 {
+        display: flex !important;
+    }
+    #td24 {
+        display: flex !important;
+    }
+    #td25 {
+        display: flex !important;
+    }
+    #td26 {
+        display: flex !important;
+    }
+    #td27 {
+        display: flex !important;
+    }
+    #td28 {
+        display: flex !important;
+    }
+    #td29 {
+        display: flex !important;
+    }
+    #td210 {
+        display: flex !important;
+    }
+    #td211 {
+        display: flex !important;
+    }
+    #td212 {
+        display: flex !important;
+    }
+    #td213 {
+        display: flex !important;
+    }
+    #td214 {
+        display: flex !important;
+    }
+    #td215 {
+        display: flex !important;
+    }
+    header {
+        height: 16vw;
+        padding: 0 4vw;
+    }
+    .logo {
+        height: 38%;
+    }
+    .timeline {
+        height: 20vw;
+    }
+    .timeZone {
+        height: 100%;
+    }
+    .timeZone h2 {
+        margin-bottom: 13vw;
+    }
+    .yearLn {
+        width: 4vw;
+        height: 4vw;
+    }
 }
