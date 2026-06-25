@@ -49,24 +49,24 @@ function quiz () {
     }
 
     q11.addEventListener('click', () => { qs1.style.display = 'none'; qs2.style.display = 'flex'; })
-    q12.addEventListener('click', () => { qs1.style.display = 'none'; qs2.style.display = 'flex'; })
-    q13.addEventListener('click', () => { coins += 1; qs1.style.display = 'none'; qs2.style.display = 'flex'; })
+    q12.addEventListener('click', () => { coins += 1; qs1.style.display = 'none'; qs2.style.display = 'flex'; })
+    q13.addEventListener('click', () => { qs1.style.display = 'none'; qs2.style.display = 'flex'; })
     q14.addEventListener('click', () => { qs1.style.display = 'none'; qs2.style.display = 'flex'; })
 
-    q21.addEventListener('click', () => { qs2.style.display = 'none'; qs3.style.display = 'flex'; })
+    q21.addEventListener('click', () => { coins += 1; qs2.style.display = 'none'; qs3.style.display = 'flex'; })
     q22.addEventListener('click', () => { qs2.style.display = 'none'; qs3.style.display = 'flex'; })
-    q23.addEventListener('click', () => { coins += 1; qs2.style.display = 'none'; qs3.style.display = 'flex'; })
+    q23.addEventListener('click', () => { qs2.style.display = 'none'; qs3.style.display = 'flex'; })
     q24.addEventListener('click', () => { qs2.style.display = 'none'; qs3.style.display = 'flex'; })
 
     q31.addEventListener('click', () => { qs3.style.display = 'none'; qs4.style.display = 'flex'; })
-    q32.addEventListener('click', () => { qs3.style.display = 'none'; qs4.style.display = 'flex'; })
-    q33.addEventListener('click', () => { coins += 1; qs3.style.display = 'none'; qs4.style.display = 'flex'; })
+    q32.addEventListener('click', () => { coins += 1; qs3.style.display = 'none'; qs4.style.display = 'flex'; })
+    q33.addEventListener('click', () => { qs3.style.display = 'none'; qs4.style.display = 'flex'; })
     q34.addEventListener('click', () => { qs3.style.display = 'none'; qs4.style.display = 'flex'; })
 
     q41.addEventListener('click', () => { qs4.style.display = 'none'; qs5.style.display = 'flex'; })
     q42.addEventListener('click', () => { qs4.style.display = 'none'; qs5.style.display = 'flex'; })
-    q43.addEventListener('click', () => { coins += 1; qs4.style.display = 'none'; qs5.style.display = 'flex'; })
-    q44.addEventListener('click', () => { qs4.style.display = 'none'; qs5.style.display = 'flex'; })
+    q43.addEventListener('click', () => { qs4.style.display = 'none'; qs5.style.display = 'flex'; })
+    q44.addEventListener('click', () => { coins += 1; qs4.style.display = 'none'; qs5.style.display = 'flex'; })
 
     q51.addEventListener('click', () => { finishQuiz(); })
     q52.addEventListener('click', () => { finishQuiz(); })

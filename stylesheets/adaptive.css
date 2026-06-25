@@ -1,16 +1,29 @@
 @media screen and (min-width: 600px) {
     .slide img {
-        width: 50vw;
-        height: 50vw;
+        width: 70vw;
+        height: 70vw;
     }
     .sliderManager {
+        height: 70vw;
+    }
+    .timeDesc {
+        padding: 73vw 3vw 34vw 2vw;
+    }
+    a {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .slide img {
+        width: 50vw;
         height: 50vw;
     }
     .timeDesc {
         padding: 53vw 3vw 34vw 2vw;
     }
-    a {
-        font-size: 4.5vw;
+    .sliderManager {
+        height: 50vw;
     }
 }
 
@@ -255,6 +268,10 @@
     } */
     #qs6 .bigButton {
         height: 40vh;
+    }
+
+    #card {
+        height: 49vw;
     }
 }
 

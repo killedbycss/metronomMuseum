@@ -581,6 +581,9 @@ header.active {
   height: 70vw;
   background-color: var(--11);
   flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
 }
 
 .sliderImg1 {
@@ -962,6 +965,18 @@ a {
 #card p {
   width: 95%;
 }
+
+#str1 {
+  background-image: url('../contents/tshirt.png');
+  background-size: cover;
+}
+
+#str3 {
+  background-image: url('../contents/bag.png');
+  background-size: cover;
+}
+
+
 
 
 
